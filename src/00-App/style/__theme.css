@@ -1,0 +1,9 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+.theme-dark {
+  --background-color: rgb(30, 30, 30);
+  --text-color: white;
+}

@@ -26,7 +26,9 @@ export const DropDownMenu: FC<typeProps> = ({ buttonText }) => {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        variant="contained">
+        variant="contained"
+        size="large"
+        color="primary">
         {buttonText}
       </Button>
       <Menu
