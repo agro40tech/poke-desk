@@ -9,8 +9,8 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 import { Provider } from "react-redux";
-import { App } from "00-App";
 import { store } from "05-Shared";
+import { App } from "00-App";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(

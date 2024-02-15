@@ -1,0 +1,12 @@
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  & span {
+    font-size: 50px;
+    color: red;
+  }
+}
