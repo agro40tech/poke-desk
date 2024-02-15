@@ -1,3 +1,5 @@
+@import "./_Variables";
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +17,13 @@ span {
   padding: 0;
 }
 
-link {
+body {
+  width: 100%;
+  font-size: $main-font-size;
+  font-family: $main-font;
+}
+
+a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -23,4 +31,8 @@ link {
 
 button {
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
 }

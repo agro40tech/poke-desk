@@ -4,9 +4,14 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  height: 100vh;
 
   & span {
     font-size: 50px;
     color: red;
+  }
+
+  & a:hover {
+    color: rgb(116, 116, 116);
   }
 }

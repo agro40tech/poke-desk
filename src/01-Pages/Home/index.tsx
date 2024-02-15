@@ -1,5 +1,10 @@
+import { Header } from "02-Widgets";
 import { FC } from "react";
 
 export const HomePage: FC = () => {
-  return <>Home</>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
