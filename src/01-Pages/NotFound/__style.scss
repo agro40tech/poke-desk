@@ -6,12 +6,12 @@
   gap: 30px;
   height: 100vh;
 
-  & span {
+  &__text-error {
     font-size: 50px;
     color: red;
   }
 
-  & a:hover {
+  &__link:hover {
     color: rgb(116, 116, 116);
   }
 }
