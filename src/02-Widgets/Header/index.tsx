@@ -9,14 +9,16 @@ export const Header: FC = () => {
     <header className="header">
       <h1 className="header__logo">Pokedesk</h1>
 
-      <ul className="header__list">
-        <li className="list__item">
-          <ToggleChangeTheme />
-        </li>
-        <li className="list__item">
-          <DropDownMenu buttonText="Инструменты" />
-        </li>
-      </ul>
+      <nav className="header__nav">
+        <ul className="nav__list">
+          <li className="list__item">
+            <ToggleChangeTheme />
+          </li>
+          <li className="list__item">
+            <DropDownMenu buttonText="Инструменты" />
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
