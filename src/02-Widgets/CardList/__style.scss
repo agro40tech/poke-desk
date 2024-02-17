@@ -2,21 +2,5 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-shrink: 1;
   gap: 20px;
-}
-
-.card__content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.card__title {
-  padding: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
-  color: #fff;
 }

@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { Card } from "05-Shared";
-import { CardContent } from "./ui/CardContent";
+import { Card, CardContentPokemon } from "05-Shared";
+
 import { cardContentConfig } from "./config";
 
 import "./__style.scss";
@@ -14,7 +14,7 @@ export const CardList: FC = () => {
             className="item__card"
             maxWidth={true}
             content={
-              <CardContent
+              <CardContentPokemon
                 cardTitle={cardContentConfig.firstCard.cardTitle}
                 imageSrc={cardContentConfig.firstCard.imageSrc}
               />
@@ -26,7 +26,7 @@ export const CardList: FC = () => {
             className="item__card"
             maxWidth={true}
             content={
-              <CardContent
+              <CardContentPokemon
                 cardTitle={cardContentConfig.secondCard.cardTitle}
                 imageSrc={cardContentConfig.secondCard.imageSrc}
               />
@@ -38,7 +38,7 @@ export const CardList: FC = () => {
             className="item__card"
             maxWidth={true}
             content={
-              <CardContent
+              <CardContentPokemon
                 cardTitle={cardContentConfig.lastCard.cardTitle}
                 imageSrc={cardContentConfig.lastCard.imageSrc}
               />

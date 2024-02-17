@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { CardList, Header } from "02-Widgets";
+import { CardList, Header, SearchPokemon } from "02-Widgets";
 
 export const HomePage: FC = () => {
   return (
@@ -7,6 +7,7 @@ export const HomePage: FC = () => {
       <Header />
       <main className="main">
         <CardList />
+        <SearchPokemon />
       </main>
     </>
   );
