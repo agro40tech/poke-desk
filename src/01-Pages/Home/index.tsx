@@ -1,6 +1,5 @@
-import { Header } from "02-Widgets";
-import { CardList } from "02-Widgets/CardList";
 import { FC } from "react";
+import { CardList, Header } from "02-Widgets";
 
 import "./__style.scss";
 

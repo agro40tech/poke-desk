@@ -1,9 +1,9 @@
 import { FC } from "react";
-
-import "./__style.scss";
 import { Card } from "05-Shared";
 import { CardContent } from "./ui/CardContent";
 import { cardContentConfig } from "./config";
+
+import "./__style.scss";
 
 export const CardList: FC = () => {
   return (
@@ -11,8 +11,8 @@ export const CardList: FC = () => {
       <ul className="card-list__list">
         <li className="list__item">
           <Card
-            className="item"
-            maxWidth={"350px"}
+            className="item__card"
+            maxWidth={true}
             content={
               <CardContent
                 cardTitle={cardContentConfig.firstCard.cardTitle}
@@ -23,8 +23,8 @@ export const CardList: FC = () => {
         </li>
         <li className="list__item">
           <Card
-            className="item"
-            maxWidth={"350px"}
+            className="item__card"
+            maxWidth={true}
             content={
               <CardContent
                 cardTitle={cardContentConfig.secondCard.cardTitle}
@@ -35,8 +35,8 @@ export const CardList: FC = () => {
         </li>
         <li className="list__item">
           <Card
-            className="item"
-            maxWidth={"350px"}
+            className="item__card"
+            maxWidth={true}
             content={
               <CardContent
                 cardTitle={cardContentConfig.lastCard.cardTitle}

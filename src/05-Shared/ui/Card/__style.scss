@@ -1,5 +1,15 @@
 .card {
   padding: 15px;
   border-radius: 4px;
-  background-color: rgb(34, 89, 177);
+  background-image: url("../../../00-App/img/card-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgb(30, 30, 30);
+}
+
+$card-width: 350px;
+
+.max-width-card {
+  max-width: $card-width;
 }

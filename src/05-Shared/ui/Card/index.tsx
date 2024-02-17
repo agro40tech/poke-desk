@@ -4,20 +4,19 @@ import "./__style.scss";
 
 type typeProps = {
   className?: string;
-  maxWidth?: string;
+  maxWidth: boolean;
   content: React.ReactElement;
 };
 
 export const Card: FC<typeProps> = ({ className, maxWidth, content }) => {
   const defaultClassName = "card";
+  const classNameMaxWidth = "max-width-card";
 
-  const usedClassName: string = className ? `${className} ${defaultClassName}` : defaultClassName;
+  const buildClassName: string = className ? `${className} ${defaultClassName}` : defaultClassName;
 
-  return !maxWidth ? (
-    <article className={usedClassName}>{content}</article>
-  ) : (
-    <article className={usedClassName} style={{ maxWidth: maxWidth }}>
-      {content}
-    </article>
-  );
+  const usedClassName: string = maxWidth
+    ? `${buildClassName} ${classNameMaxWidth}`
+    : buildClassName;
+
+  return <article className={usedClassName}>{content}</article>;
 };

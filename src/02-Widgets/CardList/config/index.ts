@@ -1,17 +1,14 @@
 export const cardContentConfig = {
   firstCard: {
-    imageSrc:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/493.png",
+    imageSrc: require("00-App/img/arceus.png"),
     cardTitle: "arceus",
   },
   secondCard: {
-    imageSrc:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+    imageSrc: require("00-App/img/mewtwo.png"),
     cardTitle: "mewtwo",
   },
   lastCard: {
-    imageSrc:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png",
+    imageSrc: require("00-App/img/lugia.png"),
     cardTitle: "lugia",
   },
 };

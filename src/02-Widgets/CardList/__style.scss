@@ -13,12 +13,14 @@
 }
 
 .card__img {
-  filter: brightness(90%);
+  filter: brightness(95%);
 }
 
 .card__title {
   padding: 10px;
-  border-top: 2px solid var(--text-color);
   text-transform: uppercase;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  color: #fff;
 }
