@@ -1,6 +1,25 @@
 .main__search-pokemon {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
   padding: 20px;
+}
+
+.search-pokemon {
+  &__content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 600px) {
+    &__title {
+      text-wrap: nowrap;
+    }
+
+    &__content {
+      flex-direction: column-reverse;
+    }
+  }
 }

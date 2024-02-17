@@ -1,6 +1,6 @@
 export const config = {
   card: {
-    imageSrc: require("00-App/img/arceus.png"),
-    cardTitle: "arceus",
+    imageSrc: require("00-App/img/pikachu.png"),
+    cardTitle: "pikachu",
   },
 };

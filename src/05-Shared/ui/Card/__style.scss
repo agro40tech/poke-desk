@@ -6,10 +6,25 @@
   background-size: cover;
   background-position: center;
   border: 1px solid rgb(30, 30, 30);
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 $card-width: 350px;
 
 .max-width-card {
   max-width: $card-width;
+}
+
+.card-animated:hover {
+  scale: 1.05;
+}
+
+.card__img {
+  transition: all 0.3s;
+}
+
+.card__img:hover {
+  rotate: 5deg;
+  scale: 1.1;
 }

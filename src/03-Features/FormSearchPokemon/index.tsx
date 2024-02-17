@@ -6,7 +6,8 @@ import { instance } from "05-Shared";
 
 export const FormSearchPokemon: FC = () => {
   const [name, setName] = useState<string>("");
-  const [isValid, setIsValid] = useState<boolean>(true);
+  const [error, setError] = useState<boolean>(false);
+  const [errorMessage, setErrorMessage] = useState<string>("Пусто поле");
 
   const handleClick = async () => {
     // if (!isValid) {
@@ -27,9 +28,27 @@ export const FormSearchPokemon: FC = () => {
     console.log("submit");
   };
 
+  const handleBlur = () => {
+    if (name.length < 2) {
+      setError(true);
+    }
+  };
+
+  const validRegex = () => {
+    const regex = /^[a-zA-Z]+$/;
+    return regex.test(name);
+  };
+
   useEffect(() => {
-    if (name.length > 2) {
-      setIsValid(false);
+    if (name.length >= 2) {
+      if (validRegex()) {
+        setError(false);
+      } else {
+        setError(true);
+        setErrorMessage("Доступны символы A-Z и a-z");
+      }
+    } else {
+      setErrorMessage("Нужно минимум 2 символа");
     }
   }, [name]);
 
@@ -41,10 +60,14 @@ export const FormSearchPokemon: FC = () => {
         label="Имя покемона"
         variant="outlined"
         onChange={(e) => setName(e.target.value)}
+        onBlur={handleBlur}
+        error={error}
+        helperText={error ? errorMessage : ""}
+        placeholder="pikachu"
       />
 
       <Button
-        disabled={isValid}
+        disabled={error}
         variant="contained"
         onClick={(e) => {
           e.preventDefault();
