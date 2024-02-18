@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 export const CardList: FC = () => {
   return (
     <section className="main__card-list">
+      <h1 className="card-list__title">Найди своего покемона!</h1>
       <ul className="card-list__list">
         <li className="list__item">
           <Card

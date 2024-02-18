@@ -1,24 +1,31 @@
 import { Card, CardContentPokemon } from "05-Shared";
 import { FC } from "react";
-import { config } from "./config";
 
 import "./__style.scss";
 import { FormSearchPokemon } from "03-Features";
+import { data } from "./data";
+import { BriefInfoPokemon } from "04-Entities/BriefInfoPokemon";
 
 export const SearchPokemon: FC = () => {
   return (
-    <section className="main__search-pokemon">
-      <h1 className="search-pokemon__title">Хочешь найти покемона?</h1>
+    <section className="main__search">
+      <h1 className="search__title">Хочешь найти покемона?</h1>
 
-      <div className="search-pokemon__content">
-        <FormSearchPokemon />
+      <div className="search__content">
         <Card
           maxWidth={true}
-          className="search-pokemon__card card-animated"
+          className="search__card card-animated"
           content={
-            <CardContentPokemon cardTitle={config.card.cardTitle} imageSrc={config.card.imageSrc} />
+            <CardContentPokemon
+              cardTitle={data.name}
+              imageSrc={data.sprites.other["official-artwork"].front_default}
+            />
           }
         />
+        <div className="search__about">
+          <BriefInfoPokemon data={data} />
+          <FormSearchPokemon />
+        </div>
       </div>
     </section>
   );

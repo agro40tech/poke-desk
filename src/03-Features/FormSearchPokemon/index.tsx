@@ -53,28 +53,30 @@ export const FormSearchPokemon: FC = () => {
   }, [name]);
 
   return (
-    <form className="form">
-      <TextField
-        className="form__input"
-        id="name-pokemon"
-        label="Имя покемона"
-        variant="outlined"
-        onChange={(e) => setName(e.target.value)}
-        onBlur={handleBlur}
-        error={error}
-        helperText={error ? errorMessage : ""}
-        placeholder="pikachu"
-      />
+    <>
+      <form className="form">
+        <TextField
+          className="form__input"
+          id="name-pokemon"
+          label="Имя покемона"
+          variant="outlined"
+          placeholder="pikachu"
+          error={error}
+          onChange={(e) => setName(e.target.value)}
+          onBlur={handleBlur}
+          helperText={error ? errorMessage : ""}
+        />
 
-      <Button
-        disabled={error}
-        variant="contained"
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick();
-        }}>
-        Найти
-      </Button>
-    </form>
+        <Button
+          disabled={error}
+          variant="contained"
+          onClick={(e) => {
+            e.preventDefault();
+            handleClick();
+          }}>
+          Найти
+        </Button>
+      </form>
+    </>
   );
 };

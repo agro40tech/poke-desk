@@ -1,0 +1,31 @@
+.info__wrapper {
+  padding: 10px;
+}
+
+.info__list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  &__title {
+    font-weight: 600;
+  }
+
+  $background-color-data: rgb(204, 100, 40);
+
+  &__data {
+    font-weight: lighter;
+    font-size: 18px;
+    background-color: $background-color-data;
+    border-radius: 4px;
+    padding: 3px;
+  }
+}
