@@ -15,7 +15,7 @@ export const FormSearchPokemon: FC = () => {
 
   const dispath = useAppDispatch();
 
-  const handleClick = async () => {
+  const handleClick = () => {
     if (!error) {
       const cacheData = JSON.parse(localStorage.getItem("pokemonData") as string);
 
